@@ -1,4 +1,4 @@
-package com.github.sgeorgiev24.sisoexpensetracker
+package com.github.sgeorgiev24.sisoexpensetracker.ui.root
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
