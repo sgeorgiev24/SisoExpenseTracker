@@ -66,6 +66,7 @@ android {
     packagingOptions {
         resources.excludes.add("/META-INF/{AL2.0,LGPL2.1}")
     }
+    namespace = "com.github.sgeorgiev24.sisoexpensetracker"
 }
 
 dependencies {
