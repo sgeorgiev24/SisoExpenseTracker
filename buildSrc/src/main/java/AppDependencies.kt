@@ -63,7 +63,6 @@ object AppDependencies {
     const val dataStorePreferences =
         "androidx.datastore:datastore-preferences:${Version.dataStorePreference}"
 
-
     @Suppress("UnstableApiUsage")
     private val compose = dependencies(
         "androidx.compose.ui:ui:${Version.compose}",
@@ -103,7 +102,12 @@ object AppDependencies {
     )
 
     private val accompanist = dependencies(
-        "com.google.accompanist:accompanist-navigation-animation:${Version.accompanist}"
+        "com.google.accompanist:accompanist-navigation-animation:${Version.accompanist}",
+        "com.google.accompanist:accompanist-navigation-material:${Version.accompanist}",
+        "com.google.accompanist:accompanist-insets-ui:${Version.accompanist}",
+        "com.google.accompanist:accompanist-systemuicontroller:${Version.accompanist}",
+        "com.google.accompanist:accompanist-swiperefresh:${Version.accompanist}",
+        "com.google.accompanist:accompanist-pager:${Version.accompanist}"
     )
 
     object Test {

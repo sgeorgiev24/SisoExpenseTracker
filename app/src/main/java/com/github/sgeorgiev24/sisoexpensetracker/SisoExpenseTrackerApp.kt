@@ -4,4 +4,8 @@ import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
 
 @HiltAndroidApp
-class SisoExpenseTrackerApp : Application()
+class SisoExpenseTrackerApp : Application() {
+    override fun onCreate() {
+        super.onCreate()
+    }
+}
