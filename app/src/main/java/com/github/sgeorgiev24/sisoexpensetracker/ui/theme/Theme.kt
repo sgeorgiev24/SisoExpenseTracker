@@ -14,8 +14,8 @@ private val DarkColorPalette = darkColors(
 
 private val LightColorPalette = lightColors(
     primary = BlueGrotto,
-    primaryVariant = BabyBlue,
-    secondary = RoyalBlue,
+    primaryVariant = RoyalBlue,
+    secondary = BabyBlue,
     surface = SilverPink
 )
 

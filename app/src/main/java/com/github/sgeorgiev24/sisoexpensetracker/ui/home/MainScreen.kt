@@ -1,8 +1,16 @@
 package com.github.sgeorgiev24.sisoexpensetracker.ui.home
 
+import androidx.compose.material.FloatingActionButton
+import androidx.compose.material.Icon
 import androidx.compose.material.Scaffold
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Add
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.alpha
 import androidx.navigation.NavGraphBuilder
+import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navigation
 import com.github.sgeorgiev24.sisoexpensetracker.presentation.navigation.destinations.MainDestination
@@ -24,6 +32,10 @@ fun MainScreen() {
         BottomNavigationItem.Settings
     )
 
+    val navBackStackEntry by navController.currentBackStackEntryAsState()
+    val currentDestination = navBackStackEntry?.destination
+    val isCurrentScreenHome = currentDestination?.route == BottomNavigationItem.Home.destination.route
+
     Scaffold(
         bottomBar = {
             SETBottomBar(
@@ -31,6 +43,15 @@ fun MainScreen() {
                 defaultItem = BottomNavigationItem.Home,
                 navController = navController
             )
+        },
+        floatingActionButton = {
+            if (isCurrentScreenHome) {
+                FloatingActionButton(
+                    onClick = { /*TODO*/ }
+                ) {
+                    Icon(imageVector = Icons.Default.Add, null)
+                }
+            }
         }
     ) {
         AnimatedNavHost(
