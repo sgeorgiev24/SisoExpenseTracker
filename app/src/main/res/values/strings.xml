@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">Siso Expense Tracker</string>
 
+    <!-- Bottom bar -->
     <string name="bottom_bar_home">Home</string>
+    <string name="bottom_bar_analytics">Analytics</string>
+    <string name="bottom_bar_settings">Settings</string>
 </resources>

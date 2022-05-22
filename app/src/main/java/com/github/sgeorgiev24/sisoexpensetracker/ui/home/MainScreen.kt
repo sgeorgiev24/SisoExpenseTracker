@@ -7,8 +7,10 @@ import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navigation
 import com.github.sgeorgiev24.sisoexpensetracker.presentation.navigation.destinations.MainDestination
 import com.github.sgeorgiev24.sisoexpensetracker.presentation.navigation.wrapper.composableHolder
+import com.github.sgeorgiev24.sisoexpensetracker.ui.analytics.AnalyticsScreen
 import com.github.sgeorgiev24.sisoexpensetracker.ui.component.bottombar.BottomNavigationItem
 import com.github.sgeorgiev24.sisoexpensetracker.ui.component.bottombar.SETBottomBar
+import com.github.sgeorgiev24.sisoexpensetracker.ui.settings.SettingsScreen
 import com.google.accompanist.navigation.animation.AnimatedNavHost
 import com.google.accompanist.navigation.animation.rememberAnimatedNavController
 
@@ -49,10 +51,10 @@ private fun NavGraphBuilder.mainDestinations() {
             HomeScreen()
         }
         composableHolder(MainDestination.Analytics) {
-            // TODO: add Analytics screen
+            AnalyticsScreen()
         }
         composableHolder(MainDestination.Settings) {
-            // TODO: add Settings screen
+            SettingsScreen()
         }
     }
 }

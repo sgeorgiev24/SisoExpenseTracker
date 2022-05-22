@@ -1,7 +1,6 @@
-package com.github.sgeorgiev24.sisoexpensetracker.ui.home
+package com.github.sgeorgiev24.sisoexpensetracker.ui.settings
 
 import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.Text
@@ -11,21 +10,20 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
 
 @Composable
-fun HomeScreen() {
-    HomeContent()
+fun SettingsScreen() {
+    SettingsContent()
 }
 
 @Composable
-private fun HomeContent() {
+private fun SettingsContent() {
     Column(
         modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(
-            text = "Home screen",
+            text = "Settings screen",
             textAlign = TextAlign.Center
         )
     }
 }
-

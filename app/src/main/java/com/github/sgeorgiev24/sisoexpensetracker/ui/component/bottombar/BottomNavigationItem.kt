@@ -19,13 +19,13 @@ sealed class BottomNavigationItem(
 
     object Analytics : BottomNavigationItem(
         MainDestination.Analytics,
-        R.string.bottom_bar_home,
-        R.drawable.ic_home
+        R.string.bottom_bar_analytics,
+        R.drawable.ic_analytics
     )
 
     object Settings : BottomNavigationItem(
         MainDestination.Settings,
-        R.string.bottom_bar_home,
-        R.drawable.ic_home
+        R.string.bottom_bar_settings,
+        R.drawable.ic_settings
     )
 }

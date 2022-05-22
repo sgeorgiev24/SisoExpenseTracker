@@ -16,6 +16,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import androidx.navigation.compose.currentBackStackEntryAsState
+import com.github.sgeorgiev24.sisoexpensetracker.ui.theme.*
 import com.google.accompanist.insets.navigationBarsHeight
 import com.google.accompanist.insets.navigationBarsPadding
 
@@ -31,7 +32,6 @@ fun SETBottomBar(
     BottomNavigation(
         modifier = Modifier
             .navigationBarsHeight(additional = 80.dp),
-//        backgroundColor = resolveBottomNavBarColor(currentDestination = currentDestination).value,
         elevation = 0.dp,
     ) {
         items.forEach { navItem ->
@@ -44,18 +44,16 @@ fun SETBottomBar(
                     Icon(
                         modifier = Modifier
                             .padding(vertical = 8.dp)
-                            .height(height = 20.dp),
+                            .height(height = 25.dp),
                         painter = painterResource(navItem.iconId),
                         contentDescription = null,
                     )
                 },
-//                selectedContentColor = SandTone,
-//                unselectedContentColor = SandTone25,
                 label = {
                     Text(
                         stringResource(navItem.labelId),
-//                        style = bottomBarTextStyle,
-                        color = if (selected) Color.Blue else Color.Black,
+                        color = if (selected) SilverPink else NavyBlue,
+                        style = bottomBarTextStyle,
                         maxLines = 1,
                         overflow = TextOverflow.Ellipsis
                     )
