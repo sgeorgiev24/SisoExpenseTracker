@@ -7,11 +7,8 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.alpha
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.currentBackStackEntryAsState
-import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navigation
 import com.github.sgeorgiev24.sisoexpensetracker.presentation.navigation.destinations.MainDestination
 import com.github.sgeorgiev24.sisoexpensetracker.presentation.navigation.wrapper.composableHolder

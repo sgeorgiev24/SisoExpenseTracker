@@ -9,14 +9,15 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import androidx.navigation.compose.currentBackStackEntryAsState
-import com.github.sgeorgiev24.sisoexpensetracker.ui.theme.*
+import com.github.sgeorgiev24.sisoexpensetracker.ui.theme.NavyBlue
+import com.github.sgeorgiev24.sisoexpensetracker.ui.theme.SilverPink
+import com.github.sgeorgiev24.sisoexpensetracker.ui.theme.bottomBarTextStyle
 import com.google.accompanist.insets.navigationBarsHeight
 import com.google.accompanist.insets.navigationBarsPadding
 
@@ -72,12 +73,3 @@ fun SETBottomBar(
         }
     }
 }
-
-//@Composable
-//fun resolveBottomNavBarColor(currentDestination: NavDestination?): State<Color> {
-//    return animateColorAsState(
-//        if (currentDestination?.route == MainDestination.Events.route) Charcoal
-//        else Color.Transparent,
-//        animationSpec = tween(500)
-//    )
-//}

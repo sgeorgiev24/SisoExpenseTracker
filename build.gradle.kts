@@ -46,7 +46,14 @@ allprojects {
         ignoreFailures.set(false)
         enableExperimentalRules.set(false)
         // wildcard imports needed for compose for now
-        disabledRules.set(listOf("no-wildcard-imports", "max-line-length", "import-ordering", "final-newline"))
+        disabledRules.set(
+            listOf(
+                "no-wildcard-imports",
+                "max-line-length",
+                "import-ordering",
+                "final-newline"
+            )
+        )
         filter {
             exclude("**/generated/**")
             include("**/kotlin/**")
