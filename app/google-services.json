@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "695595059699",
+    "project_id": "sisoexpensetracker",
+    "storage_bucket": "sisoexpensetracker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:695595059699:android:1381d627b46cfb7282aa86",
+        "android_client_info": {
+          "package_name": "com.github.sgeorgiev24.sisoexpensetracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "695595059699-c542601u8dm49m1je75g2j6jf8u3tc7u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgOjBaoK9rfBtwhzBx1JqwOmbT9UKYHsg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "695595059699-c542601u8dm49m1je75g2j6jf8u3tc7u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

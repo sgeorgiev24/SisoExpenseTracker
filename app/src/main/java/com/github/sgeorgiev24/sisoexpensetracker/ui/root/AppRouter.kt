@@ -17,9 +17,11 @@ import androidx.navigation.NavGraphBuilder
 import androidx.navigation.plusAssign
 import com.github.sgeorgiev24.sisoexpensetracker.presentation.navigation.NavigationCommand
 import com.github.sgeorgiev24.sisoexpensetracker.presentation.navigation.NavigationDispatcher
+import com.github.sgeorgiev24.sisoexpensetracker.presentation.navigation.destinations.AuthDestination
 import com.github.sgeorgiev24.sisoexpensetracker.presentation.navigation.destinations.MainDestination
 import com.github.sgeorgiev24.sisoexpensetracker.presentation.navigation.wrapper.composableHolder
 import com.github.sgeorgiev24.sisoexpensetracker.ui.home.MainScreen
+import com.github.sgeorgiev24.sisoexpensetracker.ui.splash.SplashScreen
 import com.github.sgeorgiev24.sisoexpensetracker.ui.theme.SisoExpenseTrackerTheme
 import com.google.accompanist.insets.ProvideWindowInsets
 import com.google.accompanist.navigation.animation.AnimatedNavHost
@@ -66,8 +68,9 @@ fun AppRouter(
             ) {
                 AnimatedNavHost(
                     navController = navController,
-                    startDestination = MainDestination.Main.route
+                    startDestination = AuthDestination.Splash.route
                 ) {
+                    authDestinations()
                     mainDestinations()
                 }
             }
@@ -78,6 +81,12 @@ fun AppRouter(
 private fun NavGraphBuilder.mainDestinations() {
     composableHolder(MainDestination.Main) {
         MainScreen()
+    }
+}
+
+private fun NavGraphBuilder.authDestinations() {
+    composableHolder(AuthDestination.Splash) {
+        SplashScreen()
     }
 }
 

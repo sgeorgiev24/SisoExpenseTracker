@@ -22,6 +22,11 @@ object AppDependencies {
         implementation(compose)
     }
 
+    fun DependencyHandler.firebase() {
+        add("implementation", platform("com.google.firebase:firebase-bom:29.0.4"))
+        implementation(firebase)
+    }
+
     fun DependencyHandler.coroutines() {
         implementation(coroutines)
     }
@@ -62,6 +67,12 @@ object AppDependencies {
     const val timber = "com.jakewharton.timber:timber:${Version.timber}"
     const val dataStorePreferences =
         "androidx.datastore:datastore-preferences:${Version.dataStorePreference}"
+
+    private val firebase = dependencies(
+        "com.google.firebase:firebase-analytics-ktx",
+        "com.google.firebase:firebase-crashlytics-ktx",
+        "com.google.firebase:firebase-auth"
+    )
 
     @Suppress("UnstableApiUsage")
     private val compose = dependencies(

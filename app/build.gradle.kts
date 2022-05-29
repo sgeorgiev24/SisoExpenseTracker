@@ -7,14 +7,17 @@ import AppDependencies.navigation
 import AppDependencies.retrofit
 import AppDependencies.testLibraries
 import AppDependencies.compose
+import AppDependencies.firebase
 
 plugins {
     id("com.android.application")
+    id("com.google.gms.google-services")
     id("org.jetbrains.kotlin.android")
     id("kotlin-kapt")
     id("kotlin-parcelize")
     id("dagger.hilt.android.plugin")
     id("androidx.navigation.safeargs.kotlin")
+    id("com.google.firebase.crashlytics")
 }
 
 apply(from = "versioning.gradle")
@@ -77,6 +80,7 @@ dependencies {
     implementation(AppDependencies.dataStorePreferences)
     implementation(AppDependencies.timber)
 
+    firebase()
     compose()
     coroutines()
     hilt()
